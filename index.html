@@ -1,847 +1,510 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Elysium Sport & Fitness</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;600;700;800;900&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- NAV -->
-    <nav>
-      <a href="#hero" class="nav-logo">ELYSIUM <span>&</span> FITNESS</a>
-      <ul class="nav-links">
-        <li><a href="#about">O nas</a></li>
-        <li><a href="#services">Usługi</a></li>
-        <li><a href="#pricing">Cennik</a></li>
-        <li><a href="#team">Trenerzy</a></li>
-        <li><a href="#gallery">Galeria</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="#contact" class="nav-cta">Kontakt</a></li>
-      </ul>
-      <button class="nav-hamburger" id="hamburger" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
-    </nav>
-    <div class="mobile-menu" id="mobileMenu">
-      <a href="#about" onclick="closeMobile()">O nas</a>
-      <a href="#services" onclick="closeMobile()">Usługi</a>
-      <a href="#pricing" onclick="closeMobile()">Cennik</a>
-      <a href="#team" onclick="closeMobile()">Trenerzy</a>
-      <a href="#gallery" onclick="closeMobile()">Galeria</a>
-      <a href="#faq" onclick="closeMobile()">FAQ</a>
-      <a href="#contact" onclick="closeMobile()">Kontakt</a>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elysium Sport & Fitness</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;600;700;800;900&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#hero" class="nav-logo">ELYSIUM <span>&</span> FITNESS</a>
+  <ul class="nav-links">
+    <li><a href="#about">O nas</a></li>
+    <li><a href="#services">Usługi</a></li>
+    <li><a href="#pricing">Cennik</a></li>
+    <li><a href="#team">Trenerzy</a></li>
+    <li><a href="#gallery">Galeria</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#contact" class="nav-cta">Kontakt</a></li>
+  </ul>
+  <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" onclick="closeMobile()">O nas</a>
+  <a href="#services" onclick="closeMobile()">Usługi</a>
+  <a href="#pricing" onclick="closeMobile()">Cennik</a>
+  <a href="#team" onclick="closeMobile()">Trenerzy</a>
+  <a href="#gallery" onclick="closeMobile()">Galeria</a>
+  <a href="#faq" onclick="closeMobile()">FAQ</a>
+  <a href="#contact" onclick="closeMobile()">Kontakt</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-visual">
+    <div class="hero-img-placeholder"></div>
+  </div>
+  <div class="hero-bg"></div>
+  <div class="hero-stripe hero-stripe-1"></div>
+  <div class="hero-stripe hero-stripe-2"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">
+      <div class="hero-eyebrow-line"></div>
+      <span class="label">Sport & Fitness · Diagnostyka</span>
     </div>
+    <h1 class="display hero-title">PRZEKRACZAJ<br>SWOJE<br><span class="accent">GRANICE</span></h1>
+    <p class="hero-subtitle">Profesjonalna siłownia i centrum fitness we wsi Kliniska Wielkie. Treningi dla każdego — od początkujących po sportowców wyczynowych.</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-primary">Zapisz się na trening</a>
+      <a href="#services" class="btn-outline">Poznaj ofertę</a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <div class="hero-scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
 
-    <!-- HERO -->
-    <section id="hero">
-      <div class="hero-visual">
-        <div class="hero-img-placeholder"></div>
+<!-- STATS -->
+<section id="stats">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <div class="stat-number" data-target="10">0<span class="stat-suffix">+</span></div>
+        <div class="stat-label">Lat doświadczenia</div>
       </div>
-      <div class="hero-bg"></div>
-      <div class="hero-stripe hero-stripe-1"></div>
-      <div class="hero-stripe hero-stripe-2"></div>
-      <div class="hero-content">
-        <div class="hero-eyebrow">
-          <div class="hero-eyebrow-line"></div>
-          <span class="label">Sport & Fitness · Rehabilitacja</span>
-        </div>
-        <h1 class="display hero-title">
-          PRZEKRACZAJ<br />SWOJE<br /><span class="accent">GRANICE</span>
-        </h1>
-        <p class="hero-subtitle">
-          Profesjonalna siłownia i centrum fitness w sercu miasta. Treningi dla
-          każdego — od początkujących po sportowców wyczynowych.
-        </p>
-        <div class="hero-actions">
-          <a href="#contact" class="btn-primary">Zapisz się na trening</a>
-          <a href="#services" class="btn-outline">Poznaj ofertę</a>
-        </div>
+      <div class="stat-item">
+        <div class="stat-number" data-target="15">0<span class="stat-suffix"></span></div>
+        <div class="stat-label">Ilość certyfikatów</div>
       </div>
-      <div class="hero-scroll">
-        <div class="hero-scroll-line"></div>
-        <span>Scroll</span>
-      </div>
-    </section>
-
-    <!-- STATS -->
-    <section id="stats">
-      <div class="container">
-        <div class="stats-grid">
-          <div class="stat-item">
-            <div class="stat-number" data-target="12">
-              0<span class="stat-suffix">+</span>
-            </div>
-            <div class="stat-label">Lat doświadczenia</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-number" data-target="2400">
-              0<span class="stat-suffix">+</span>
-            </div>
-            <div class="stat-label">Zadowolonych klientów</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-number" data-target="18">
-              0<span class="stat-suffix"></span>
-            </div>
-            <div class="stat-label">Certyfikowanych trenerów</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about" class="section-pad">
-      <div class="container">
-        <div class="about-grid">
-          <div class="about-visual reveal">
-            <div class="about-img about-img-main">
-              <div class="about-img-placeholder">
-                <svg
-                  class="about-img-icon"
-                  viewBox="0 0 48 48"
-                  fill="none"
-                  stroke="white"
-                  stroke-width="1.5"
-                >
-                  <rect x="4" y="20" width="40" height="8" rx="4" />
-                  <circle cx="12" cy="24" r="6" />
-                  <circle cx="36" cy="24" r="6" />
-                </svg>
-              </div>
-            </div>
-            <div class="about-img about-img-accent">
-              <div class="about-img-placeholder">
-                <svg
-                  class="about-img-icon"
-                  viewBox="0 0 48 48"
-                  fill="none"
-                  stroke="white"
-                  stroke-width="1.5"
-                >
-                  <path d="M24 4l4 12h12l-10 7 4 12-10-7-10 7 4-12L8 16h12z" />
-                </svg>
-              </div>
-              <div class="about-year-badge">
-                <strong>2013</strong>
-                <span>od roku</span>
-              </div>
-            </div>
-          </div>
-          <div class="about-text reveal">
-            <span class="label">O nas</span>
-            <h2 class="section-title" style="margin-bottom: 24px">
-              NASZA<br />HISTORIA
-            </h2>
-            <p>
-              Elysium Sport & Fitness powstało z pasji do sportu i głębokiego
-              przekonania, że aktywność fizyczna powinna być dostępna dla
-              każdego — niezależnie od wieku, poziomu zaawansowania czy celów.
-            </p>
-            <p>
-              Od ponad dekady budujemy społeczność ludzi, którzy codziennie
-              wybierają ruch zamiast stagnacji. Nasz zespół certyfikowanych
-              trenerów i specjalistów od rehabilitacji sprawia, że każdy krok w
-              kierunku lepszej formy jest bezpieczny i efektywny.
-            </p>
-            <p>
-              Wyposażenie najwyższej klasy, przestronne sale treningowe i
-              indywidualne podejście do każdego klienta — to fundamenty, na
-              których zbudowaliśmy Elysium.
-            </p>
-            <div class="about-badges">
-              <div class="badge">
-                <span class="badge-dot"></span>Certyfikat ISO 9001
-              </div>
-              <div class="badge">
-                <span class="badge-dot"></span>Najlepsza siłownia 2023
-              </div>
-              <div class="badge">
-                <span class="badge-dot"></span>Partner PZFS
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SERVICES -->
-    <section id="services" class="section-pad">
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="label">Co oferujemy</span>
-          <h2 class="section-title">NASZE<br />USŁUGI</h2>
-          <div class="section-divider"></div>
-        </div>
-        <div class="services-grid reveal">
-          <div class="service-card">
-            <div class="service-number">01</div>
-            <div class="service-icon">
-              <svg viewBox="0 0 24 24" stroke-width="1.5">
-                <rect x="3" y="10" width="18" height="4" rx="2" />
-                <circle cx="7" cy="12" r="3" />
-                <circle cx="17" cy="12" r="3" />
-              </svg>
-            </div>
-            <h3 class="service-title">Siłownia & Fitness</h3>
-            <p class="service-desc">
-              Ponad 500 m² nowoczesnej przestrzeni treningowej z najnowszym
-              sprzętem cardio i siłowym. Strefy dedykowane trenowaniom
-              funkcjonalnym, wolnym ciężarom oraz maszynom.
-            </p>
-            <ul class="service-features">
-              <li class="service-feature">Ponad 120 urządzeń treningowych</li>
-              <li class="service-feature">Strefa free weights & strongman</li>
-              <li class="service-feature">Dedykowana strefa cardio</li>
-              <li class="service-feature">Treningi EMS & HIIT</li>
-              <li class="service-feature">Strefa stretching & mobilności</li>
-            </ul>
-          </div>
-          <div class="service-card">
-            <div class="service-number">02</div>
-            <div class="service-icon">
-              <svg viewBox="0 0 24 24" stroke-width="1.5">
-                <path
-                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"
-                />
-                <path d="M8 12h8M12 8v8" />
-              </svg>
-            </div>
-            <h3 class="service-title">Rehabilitacja & Fizjoterapia</h3>
-            <p class="service-desc">
-              Profesjonalne centrum rehabilitacji prowadzone przez
-              doświadczonych fizjoterapeutów. Kompleksowa diagnostyka, leczenie
-              urazów sportowych i powrót do pełnej sprawności.
-            </p>
-            <ul class="service-features">
-              <li class="service-feature">Diagnoza i ocena funkcjonalna</li>
-              <li class="service-feature">
-                Fizykoterapia (ultradźwięki, laser)
-              </li>
-              <li class="service-feature">Rehabilitacja pourazowa</li>
-              <li class="service-feature">Masaż sportowy i leczniczy</li>
-              <li class="service-feature">Kinezyterapia indywidualna</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PRICING -->
-    <section id="pricing" class="section-pad">
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="label">Ile to kosztuje</span>
-          <h2 class="section-title">CENNIK<br />ZAJĘĆ</h2>
-          <div class="section-divider"></div>
-        </div>
-        <div class="reveal">
-          <table class="pricing-table">
-            <thead>
-              <tr>
-                <th>Usługa</th>
-                <th>Czas</th>
-                <th>Opis</th>
-                <th>Cena</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Trening personalny</td>
-                <td>60 min</td>
-                <td>Indywidualny plan i nadzór trenera</td>
-                <td>150 zł</td>
-              </tr>
-              <tr>
-                <td>Trening personalny</td>
-                <td>90 min</td>
-                <td>Rozszerzony trening z analizą postępów</td>
-                <td>200 zł</td>
-              </tr>
-              <tr>
-                <td>Pakiet 10 treningów</td>
-                <td>60 min/szt.</td>
-                <td>Oszczędzasz 200 zł vs pojedynczy</td>
-                <td>1 300 zł</td>
-              </tr>
-              <tr>
-                <td>Konsultacja fizjoterapeutyczna</td>
-                <td>45 min</td>
-                <td>Diagnostyka, ocena funkcjonalna</td>
-                <td>120 zł</td>
-              </tr>
-              <tr>
-                <td>Sesja fizjoterapii</td>
-                <td>60 min</td>
-                <td>Pełna sesja terapeutyczna</td>
-                <td>160 zł</td>
-              </tr>
-              <tr>
-                <td>Masaż sportowy</td>
-                <td>60 min</td>
-                <td>Regeneracja mięśni i tkanek miękkich</td>
-                <td>130 zł</td>
-              </tr>
-              <tr>
-                <td>Masaż sportowy</td>
-                <td>30 min</td>
-                <td>Partia ciała lub masaż ekspresowy</td>
-                <td>80 zł</td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="pricing-note">
-            <svg
-              style="
-                width: 18px;
-                height: 18px;
-                stroke: var(--blue);
-                fill: none;
-                flex-shrink: 0;
-              "
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-            >
-              <circle cx="12" cy="12" r="10" />
-              <path d="M12 8v4m0 4h.01" />
-            </svg>
-            Ceny dotyczą zajęć indywidualnych. W sprawie pakietów, voucherów i
-            karnetów dla firm —
-            <strong>skontaktuj się z nami bezpośrednio.</strong> Studenci i
-            seniorzy 50+ mają prawo do 15% zniżki.
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- TEAM -->
-    <section id="team" class="section-pad">
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="label">Nasi specjaliści</span>
-          <h2 class="section-title">POZNAJ<br />TRENERÓW</h2>
-          <div class="section-divider"></div>
-        </div>
-        <div class="team-grid reveal">
-          <div class="trainer-card">
-            <div class="trainer-photo">
-              <div class="trainer-photo-placeholder">
-                <div class="trainer-avatar">
-                  <svg viewBox="0 0 24 24" stroke-width="1.5">
-                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-                    <circle cx="12" cy="7" r="4" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <div class="trainer-info">
-              <div class="trainer-name">Kamil Nowak</div>
-              <div class="trainer-role">Head Trainer / Siłownia</div>
-              <div class="trainer-certs">
-                <span class="cert-tag">PZFS Level 3</span>
-                <span class="cert-tag">Strength & Cond.</span>
-                <span class="cert-tag">FMS</span>
-              </div>
-            </div>
-          </div>
-          <div class="trainer-card">
-            <div class="trainer-photo">
-              <div class="trainer-photo-placeholder">
-                <div class="trainer-avatar">
-                  <svg viewBox="0 0 24 24" stroke-width="1.5">
-                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-                    <circle cx="12" cy="7" r="4" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <div class="trainer-info">
-              <div class="trainer-name">Anna Wiśniewska</div>
-              <div class="trainer-role">Fizjoterapeutka</div>
-              <div class="trainer-certs">
-                <span class="cert-tag">Mgr fizjoterapii</span>
-                <span class="cert-tag">McKenzie</span>
-                <span class="cert-tag">Kinesiotaping</span>
-              </div>
-            </div>
-          </div>
-          <div class="trainer-card">
-            <div class="trainer-photo">
-              <div class="trainer-photo-placeholder">
-                <div class="trainer-avatar">
-                  <svg viewBox="0 0 24 24" stroke-width="1.5">
-                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-                    <circle cx="12" cy="7" r="4" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <div class="trainer-info">
-              <div class="trainer-name">Marcin Kowalczyk</div>
-              <div class="trainer-role">Personal Trainer</div>
-              <div class="trainer-certs">
-                <span class="cert-tag">CrossFit L2</span>
-                <span class="cert-tag">HIIT Coach</span>
-                <span class="cert-tag">Żywienie</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- GALLERY -->
-    <section id="gallery" class="section-pad">
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="label">Przestrzeń</span>
-          <h2 class="section-title">GALERIA</h2>
-          <div class="section-divider"></div>
-        </div>
-        <div class="gallery-grid reveal">
-          <div class="gallery-item">
-            <div class="gallery-placeholder">
-              <div class="gallery-placeholder-icon">
-                <svg viewBox="0 0 24 24">
-                  <rect x="3" y="3" width="18" height="18" rx="2" />
-                  <path d="M3 9h18M9 21V9" />
-                </svg>
-              </div>
-            </div>
-            <div class="gallery-overlay"></div>
-          </div>
-          <div class="gallery-item">
-            <div class="gallery-placeholder">
-              <div class="gallery-placeholder-icon">
-                <svg viewBox="0 0 24 24">
-                  <rect x="3" y="10" width="18" height="4" rx="2" />
-                  <circle cx="7" cy="12" r="3" />
-                  <circle cx="17" cy="12" r="3" />
-                </svg>
-              </div>
-            </div>
-            <div class="gallery-overlay"></div>
-          </div>
-          <div class="gallery-item">
-            <div class="gallery-placeholder">
-              <div class="gallery-placeholder-icon">
-                <svg viewBox="0 0 24 24">
-                  <path
-                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"
-                  />
-                </svg>
-              </div>
-            </div>
-            <div class="gallery-overlay"></div>
-          </div>
-          <div class="gallery-item">
-            <div class="gallery-placeholder">
-              <div class="gallery-placeholder-icon">
-                <svg viewBox="0 0 24 24">
-                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-                  <circle cx="12" cy="7" r="4" />
-                </svg>
-              </div>
-            </div>
-            <div class="gallery-overlay"></div>
-          </div>
-          <div class="gallery-item">
-            <div class="gallery-placeholder">
-              <div class="gallery-placeholder-icon">
-                <svg viewBox="0 0 24 24">
-                  <rect x="3" y="3" width="18" height="18" rx="2" />
-                  <path d="M3 9h18M9 21V9" />
-                </svg>
-              </div>
-            </div>
-            <div class="gallery-overlay"></div>
-          </div>
-          <div class="gallery-item">
-            <div class="gallery-placeholder">
-              <div class="gallery-placeholder-icon">
-                <svg viewBox="0 0 24 24">
-                  <path
-                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 11.5 19.79 19.79 0 0 1 1.61 2.84 2 2 0 0 1 3.58 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.5a16 16 0 0 0 5.55 5.55l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 15.47z"
-                  />
-                </svg>
-              </div>
-            </div>
-            <div class="gallery-overlay"></div>
-          </div>
-        </div>
-        <p
-          style="
-            margin-top: 20px;
-            font-size: 13px;
-            color: var(--muted);
-            font-style: italic;
-            text-align: center;
-          "
-        >
-          Zastępcze kafle graficzne — gotowe na Twoje zdjęcia siłowni, treningów
-          i zespołu.
-        </p>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section id="faq" class="section-pad">
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="label">Masz pytania?</span>
-          <h2 class="section-title">FAQ</h2>
-          <div class="section-divider"></div>
-        </div>
-        <div class="faq-list reveal">
-          <div class="faq-item">
-            <button class="faq-question" onclick="toggleFaq(this)">
-              Jak mogę zapisać się na trening personalny?
-              <div class="faq-icon"></div>
-            </button>
-            <div class="faq-answer">
-              Zapisy na treningi personalne odbywają się telefonicznie, mailowo
-              lub przez formularz kontaktowy na tej stronie. Po kontakcie nasz
-              koordynator skontaktuje się z Tobą, aby umówić pierwszą, bezpłatną
-              konsultację wstępną z trenerem.
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question" onclick="toggleFaq(this)">
-              Czy mogę przyjść bez wcześniejszego zapisu?
-              <div class="faq-icon"></div>
-            </button>
-            <div class="faq-answer">
-              Tak — siłownia jest otwarta bez wcześniejszego zapisu. Na zajęcia
-              indywidualne i sesje fizjoterapii obowiązuje jednak wcześniejsza
-              rezerwacja terminu, aby zagwarantować dostępność Twojego trenera
-              lub fizjoterapeuty.
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question" onclick="toggleFaq(this)">
-              Czy Elysium jest odpowiednie dla początkujących?
-              <div class="faq-icon"></div>
-            </button>
-            <div class="faq-answer">
-              Absolutnie tak! Pracujemy z osobami na każdym poziomie
-              zaawansowania. Nasi trenerzy przeprowadzą Cię przez bezpieczny
-              wdrożeniowy plan treningowy, dostosowany do Twoich możliwości i
-              celów. Nie musisz mieć żadnego wcześniejszego doświadczenia.
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question" onclick="toggleFaq(this)">
-              Jakie są godziny otwarcia siłowni?
-              <div class="faq-icon"></div>
-            </button>
-            <div class="faq-answer">
-              Siłownia jest otwarta od poniedziałku do piątku w godzinach
-              6:00–22:00, w soboty 8:00–20:00, a w niedziele 10:00–18:00.
-              Centrum rehabilitacji pracuje od poniedziałku do piątku 8:00–20:00
-              oraz w soboty 9:00–15:00.
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question" onclick="toggleFaq(this)">
-              Czy oferujecie zniżki dla seniorów i studentów?
-              <div class="faq-icon"></div>
-            </button>
-            <div class="faq-answer">
-              Tak — osoby powyżej 50. roku życia oraz studenci z ważną
-              legitymacją studencką mogą korzystać z 15% zniżki na wszystkie
-              zajęcia indywidualne. Zniżka nie łączy się z innymi promocjami.
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question" onclick="toggleFaq(this)">
-              Jak wygląda pierwsza wizyta u fizjoterapeuty?
-              <div class="faq-icon"></div>
-            </button>
-            <div class="faq-answer">
-              Pierwsza wizyta trwa 45 minut i obejmuje szczegółowy wywiad
-              medyczny, ocenę funkcjonalną i analizę biomechaniczną. Na tej
-              podstawie fizjoterapeuta opracowuje indywidualny plan
-              terapeutyczny i omawia go z Tobą przed przystąpieniem do leczenia.
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question" onclick="toggleFaq(this)">
-              Czy jest parking przy siłowni?
-              <div class="faq-icon"></div>
-            </button>
-            <div class="faq-answer">
-              Tak, do dyspozycji klientów Elysium jest bezpłatny parking
-              strzeżony bezpośrednio przy obiekcie z miejscami dla klientów
-              siłowni, w tym dla osób z niepełnosprawnościami.
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section-pad">
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="label">Napisz lub zadzwoń</span>
-          <h2 class="section-title">KONTAKT</h2>
-          <div class="section-divider"></div>
-        </div>
-        <div class="contact-grid">
-          <div class="reveal">
-            <div class="contact-detail">
-              <div class="contact-icon">
-                <svg viewBox="0 0 24 24" stroke-width="1.5">
-                  <path
-                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 0 1-2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0z"
-                  />
-                  <path d="M15 11a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-                </svg>
-              </div>
-              <div>
-                <div class="contact-label">Adres</div>
-                <div class="contact-value">
-                  ul. Sportowa 18, 00-001 Warszawa
-                </div>
-              </div>
-            </div>
-            <div class="contact-detail">
-              <div class="contact-icon">
-                <svg viewBox="0 0 24 24" stroke-width="1.5">
-                  <path
-                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 11.5 19.79 19.79 0 0 1 1.61 2.84 2 2 0 0 1 3.58 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.5a16 16 0 0 0 5.55 5.55l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 15.47z"
-                  />
-                </svg>
-              </div>
-              <div>
-                <div class="contact-label">Telefon</div>
-                <div class="contact-value">
-                  <a href="tel:+48123456789">+48 123 456 789</a>
-                </div>
-              </div>
-            </div>
-            <div class="contact-detail">
-              <div class="contact-icon">
-                <svg viewBox="0 0 24 24" stroke-width="1.5">
-                  <path
-                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
-                  />
-                  <polyline points="22,6 12,13 2,6" />
-                </svg>
-              </div>
-              <div>
-                <div class="contact-label">E-mail</div>
-                <div class="contact-value">
-                  <a href="mailto:kontakt@elysiumfitness.pl"
-                    >kontakt@elysiumfitness.pl</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="contact-detail">
-              <div class="contact-icon">
-                <svg viewBox="0 0 24 24" stroke-width="1.5">
-                  <circle cx="12" cy="12" r="10" />
-                  <polyline points="12 6 12 12 16 14" />
-                </svg>
-              </div>
-              <div>
-                <div class="contact-label">Godziny otwarcia</div>
-                <div class="contact-value" style="font-size: 14px">
-                  Pn–Pt: 6:00–22:00<br />Sob: 8:00–20:00 · Nd: 10:00–18:00
-                </div>
-              </div>
-            </div>
-            <div class="social-links">
-              <a href="#" class="social-link" aria-label="Facebook">
-                <svg viewBox="0 0 24 24" stroke-width="1.5">
-                  <path
-                    d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
-                  />
-                </svg>
-              </a>
-              <a href="#" class="social-link" aria-label="Instagram">
-                <svg viewBox="0 0 24 24" stroke-width="1.5">
-                  <rect x="2" y="2" width="20" height="20" rx="5" />
-                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-                </svg>
-              </a>
-              <a href="#" class="social-link" aria-label="YouTube">
-                <svg viewBox="0 0 24 24" stroke-width="1.5">
-                  <path
-                    d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"
-                  />
-                  <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" />
-                </svg>
-              </a>
-            </div>
-            <div class="map-box">
-              <div class="map-placeholder">
-                <div class="map-pin">
-                  <svg viewBox="0 0 24 24">
-                    <path
-                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 0 1-2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0z"
-                    />
-                    <path d="M15 11a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-                  </svg>
-                </div>
-                <span class="map-text">ul. Sportowa 18, Warszawa</span>
-              </div>
-            </div>
-          </div>
-          <div class="contact-form reveal">
-            <form onsubmit="submitForm(event)">
-              <div class="form-cols">
-                <div class="form-row">
-                  <label>Imię i nazwisko</label>
-                  <input type="text" placeholder="Jan Kowalski" required />
-                </div>
-                <div class="form-row">
-                  <label>Telefon</label>
-                  <input type="tel" placeholder="+48 000 000 000" />
-                </div>
-              </div>
-              <div class="form-row">
-                <label>Adres e-mail</label>
-                <input type="email" placeholder="twoj@email.pl" required />
-              </div>
-              <div class="form-row">
-                <label>Temat zapytania</label>
-                <select>
-                  <option value="">Wybierz temat...</option>
-                  <option>Trening personalny</option>
-                  <option>Rehabilitacja / fizjoterapia</option>
-                  <option>Masaż sportowy</option>
-                  <option>Informacje ogólne</option>
-                  <option>Inne</option>
-                </select>
-              </div>
-              <div class="form-row">
-                <label>Wiadomość</label>
-                <textarea
-                  placeholder="Napisz, jak możemy Ci pomóc..."
-                ></textarea>
-              </div>
-              <button type="submit" class="form-submit">
-                Wyślij wiadomość
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-      <div class="container">
-        <div class="footer-grid">
-          <div>
-            <div class="footer-logo">ELYSIUM <span>&</span> FITNESS</div>
-            <p class="footer-desc">
-              Profesjonalne centrum fitness i rehabilitacji. Dołącz do
-              społeczności, która codziennie wybiera ruch i zdrowie.
-            </p>
-          </div>
-          <div>
-            <div class="footer-col-title">Nawigacja</div>
-            <ul class="footer-links">
-              <li><a href="#about">O nas</a></li>
-              <li><a href="#services">Usługi</a></li>
-              <li><a href="#pricing">Cennik</a></li>
-              <li><a href="#team">Trenerzy</a></li>
-              <li><a href="#gallery">Galeria</a></li>
-              <li><a href="#faq">FAQ</a></li>
-              <li><a href="#contact">Kontakt</a></li>
-            </ul>
-          </div>
-          <div>
-            <div class="footer-col-title">Informacje</div>
-            <ul class="footer-links">
-              <li>
-                <a
-                  href="#"
-                  onclick="
-                    openModal('regulamin');
-                    return false;
-                  "
-                  >Regulamin siłowni</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  onclick="
-                    openModal('polityka');
-                    return false;
-                  "
-                  >Polityka prywatności</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  onclick="
-                    openModal('rodo');
-                    return false;
-                  "
-                  >RODO</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <div class="footer-copy">
-            © 2025 Elysium Sport & Fitness. Wszelkie prawa zastrzeżone.
-          </div>
-          <div class="footer-legal">
-            <a
-              href="#"
-              onclick="
-                openModal('regulamin');
-                return false;
-              "
-              >Regulamin</a
-            >
-            <a
-              href="#"
-              onclick="
-                openModal('polityka');
-                return false;
-              "
-              >Polityka prywatności</a
-            >
-            <a
-              href="#"
-              onclick="
-                openModal('rodo');
-                return false;
-              "
-              >RODO</a
-            >
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <!-- MODALS -->
-    <div class="modal-overlay" id="modal-overlay" onclick="closeModal(event)">
-      <div class="modal">
-        <div class="modal-header">
-          <div class="modal-title" id="modal-title">Regulamin</div>
-          <button class="modal-close" onclick="closeModalDirect()">✕</button>
-        </div>
-        <div class="modal-body" id="modal-body"></div>
+      <div class="stat-item">
+        <div class="stat-number" data-target="1">0<span class="stat-suffix"></span></div>
+        <div class="stat-label">Certyfikowanych trenerów</div>
       </div>
     </div>
+  </div>
+</section>
 
-    <script src="script.js"></script>
-  </body>
+<!-- ABOUT -->
+<section id="about" class="section-pad">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-visual reveal">
+        <div class="about-img about-img-main">
+          <div class="about-img-placeholder">
+            <svg class="about-img-icon" viewBox="0 0 48 48" fill="none" stroke="white" stroke-width="1.5"><rect x="4" y="20" width="40" height="8" rx="4"/><circle cx="12" cy="24" r="6"/><circle cx="36" cy="24" r="6"/></svg>
+          </div>
+        </div>
+        <div class="about-img about-img-accent">
+          <div class="about-img-placeholder">
+            <svg class="about-img-icon" viewBox="0 0 48 48" fill="none" stroke="white" stroke-width="1.5"><path d="M24 4l4 12h12l-10 7 4 12-10-7-10 7 4-12L8 16h12z"/></svg>
+          </div>
+          <div class="about-year-badge">
+            <strong>2013</strong>
+            <span>od roku</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-text reveal">
+        <span class="label">O nas</span>
+        <h2 class="section-title" style="margin-bottom:24px">NASZA<br>HISTORIA</h2>
+        <p>Elysium Sport & Fitness powstało z pasji do sportu i głębokiego przekonania, że aktywność fizyczna powinna być dostępna dla każdego — niezależnie od wieku, poziomu zaawansowania czy celów.</p>
+        <p>Od ponad dekady budujemy społeczność ludzi, którzy codziennie wybierają ruch zamiast stagnacji. Nasz zespół certyfikowanych trenerów i specjalistów od rehabilitacji sprawia, że każdy krok w kierunku lepszej formy jest bezpieczny i efektywny.</p>
+        <p>Wyposażenie najwyższej klasy, przestronne sale treningowe i indywidualne podejście do każdego klienta — to fundamenty, na których zbudowaliśmy Elysium.</p>
+        <div class="about-badges">
+          <div class="badge"><span class="badge-dot"></span>Certyfikat ISO 9001</div>
+          <div class="badge"><span class="badge-dot"></span>Najlepsza siłownia 2023</div>
+          <div class="badge"><span class="badge-dot"></span>Partner PZFS</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section-pad">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="label">Co oferujemy</span>
+      <h2 class="section-title">NASZE<br>USŁUGI</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="services-grid reveal">
+      <div class="service-card">
+        <div class="service-number">01</div>
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" stroke-width="1.5"><rect x="3" y="10" width="18" height="4" rx="2"/><circle cx="7" cy="12" r="3"/><circle cx="17" cy="12" r="3"/></svg>
+        </div>
+        <h3 class="service-title">Siłownia & Fitness</h3>
+        <p class="service-desc">Ponad 500 m² nowoczesnej przestrzeni treningowej z najnowszym sprzętem cardio i siłowym. Strefy dedykowane trenowaniom funkcjonalnym, wolnym ciężarom oraz maszynom.</p>
+        <ul class="service-features">
+          <li class="service-feature">Ponad 120 urządzeń treningowych</li>
+          <li class="service-feature">Strefa free weights & strongman</li>
+          <li class="service-feature">Dedykowana strefa cardio</li>
+          <li class="service-feature">Treningi EMS & HIIT</li>
+          <li class="service-feature">Strefa stretching & mobilności</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <div class="service-number">02</div>
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" stroke-width="1.5"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M8 12h8M12 8v8"/></svg>
+        </div>
+        <h3 class="service-title">Rehabilitacja & Fizjoterapia</h3>
+        <p class="service-desc">Profesjonalne centrum rehabilitacji prowadzone przez doświadczonych fizjoterapeutów. Kompleksowa diagnostyka, leczenie urazów sportowych i powrót do pełnej sprawności.</p>
+        <ul class="service-features">
+          <li class="service-feature">Diagnoza i ocena funkcjonalna</li>
+          <li class="service-feature">Fizykoterapia (ultradźwięki, laser)</li>
+          <li class="service-feature">Rehabilitacja pourazowa</li>
+          <li class="service-feature">Masaż sportowy i leczniczy</li>
+          <li class="service-feature">Kinezyterapia indywidualna</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing" class="section-pad">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="label">Ile to kosztuje</span>
+      <h2 class="section-title">CENNIK<br>ZAJĘĆ</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="reveal">
+      <table class="pricing-table">
+        <thead>
+          <tr>
+            <th>Usługa</th>
+            <th>Czas</th>
+            <th>Opis</th>
+            <th>Cena</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Trening personalny</td>
+            <td>60 min</td>
+            <td>Indywidualny plan i nadzór trenera</td>
+            <td>150 zł</td>
+          </tr>
+          <tr>
+            <td>Trening personalny</td>
+            <td>90 min</td>
+            <td>Rozszerzony trening z analizą postępów</td>
+            <td>200 zł</td>
+          </tr>
+          <tr>
+            <td>Pakiet 10 treningów</td>
+            <td>60 min/szt.</td>
+            <td>Oszczędzasz 200 zł vs pojedynczy</td>
+            <td>1 300 zł</td>
+          </tr>
+          <tr>
+            <td>Konsultacja fizjoterapeutyczna</td>
+            <td>45 min</td>
+            <td>Diagnostyka, ocena funkcjonalna</td>
+            <td>120 zł</td>
+          </tr>
+          <tr>
+            <td>Sesja fizjoterapii</td>
+            <td>60 min</td>
+            <td>Pełna sesja terapeutyczna</td>
+            <td>160 zł</td>
+          </tr>
+          <tr>
+            <td>Masaż sportowy</td>
+            <td>60 min</td>
+            <td>Regeneracja mięśni i tkanek miękkich</td>
+            <td>130 zł</td>
+          </tr>
+          <tr>
+            <td>Masaż sportowy</td>
+            <td>30 min</td>
+            <td>Partia ciała lub masaż ekspresowy</td>
+            <td>80 zł</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="pricing-note">
+        <svg style="width:18px;height:18px;stroke:var(--blue);fill:none;flex-shrink:0" viewBox="0 0 24 24" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01"/></svg>
+        Ceny dotyczą zajęć indywidualnych. W sprawie pakietów, voucherów i karnetów dla firm — <strong>skontaktuj się z nami bezpośrednio.</strong> Studenci i seniorzy 50+ mają prawo do 15% zniżki.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section id="team" class="section-pad">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="label">Nasi specjaliści</span>
+      <h2 class="section-title">POZNAJ<br>TRENERÓW</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="team-grid reveal" style="grid-template-columns: 1fr; max-width: 360px;">
+      <div class="trainer-card">
+        <div class="trainer-photo">
+          <div class="trainer-photo-placeholder">
+            <div class="trainer-avatar">
+              <svg viewBox="0 0 24 24" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+          </div>
+        </div>
+        <div class="trainer-info">
+          <div class="trainer-name">Patrycja Fiedorek</div>
+          <div class="trainer-role">Head Trainer / Personal Trainer</div>
+          <div class="trainer-certs">
+            <span class="cert-tag">Head Trainer</span>
+            <span class="cert-tag">Personal Trainer</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="section-pad">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="label">Przestrzeń</span>
+      <h2 class="section-title">GALERIA</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="gallery-grid reveal">
+      <div class="gallery-item">
+        <div class="gallery-placeholder">
+          <div class="gallery-placeholder-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+        </div>
+        <div class="gallery-overlay"></div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-placeholder">
+          <div class="gallery-placeholder-icon"><svg viewBox="0 0 24 24"><rect x="3" y="10" width="18" height="4" rx="2"/><circle cx="7" cy="12" r="3"/><circle cx="17" cy="12" r="3"/></svg></div>
+        </div>
+        <div class="gallery-overlay"></div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-placeholder">
+          <div class="gallery-placeholder-icon"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg></div>
+        </div>
+        <div class="gallery-overlay"></div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-placeholder">
+          <div class="gallery-placeholder-icon"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+        </div>
+        <div class="gallery-overlay"></div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-placeholder">
+          <div class="gallery-placeholder-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+        </div>
+        <div class="gallery-overlay"></div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-placeholder">
+          <div class="gallery-placeholder-icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 11.5 19.79 19.79 0 0 1 1.61 2.84 2 2 0 0 1 3.58 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.5a16 16 0 0 0 5.55 5.55l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 15.47z"/></svg></div>
+        </div>
+        <div class="gallery-overlay"></div>
+      </div>
+    </div>
+    <p style="margin-top:20px;font-size:13px;color:var(--muted);font-style:italic;text-align:center">Zastępcze kafle graficzne — gotowe na Twoje zdjęcia siłowni, treningów i zespołu.</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="section-pad">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="label">Masz pytania?</span>
+      <h2 class="section-title">FAQ</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Jak mogę zapisać się na trening personalny?
+          <div class="faq-icon"></div>
+        </button>
+        <div class="faq-answer">Zapisy na treningi personalne odbywają się telefonicznie, mailowo lub przez formularz kontaktowy na tej stronie. Po kontakcie nasz koordynator skontaktuje się z Tobą, aby umówić pierwszą, bezpłatną konsultację wstępną z trenerem.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Czy mogę przyjść bez wcześniejszego zapisu?
+          <div class="faq-icon"></div>
+        </button>
+        <div class="faq-answer">Tak — siłownia jest otwarta bez wcześniejszego zapisu. Na zajęcia indywidualne i sesje fizjoterapii obowiązuje jednak wcześniejsza rezerwacja terminu, aby zagwarantować dostępność Twojego trenera lub fizjoterapeuty.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Czy Elysium jest odpowiednie dla początkujących?
+          <div class="faq-icon"></div>
+        </button>
+        <div class="faq-answer">Absolutnie tak! Pracujemy z osobami na każdym poziomie zaawansowania. Nasi trenerzy przeprowadzą Cię przez bezpieczny wdrożeniowy plan treningowy, dostosowany do Twoich możliwości i celów. Nie musisz mieć żadnego wcześniejszego doświadczenia.</div>
+      </div>
+
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Jak wygląda pierwsza wizyta u fizjoterapeuty?
+          <div class="faq-icon"></div>
+        </button>
+        <div class="faq-answer">Pierwsza wizyta trwa 45 minut i obejmuje szczegółowy wywiad medyczny, ocenę funkcjonalną i analizę biomechaniczną. Na tej podstawie fizjoterapeuta opracowuje indywidualny plan terapeutyczny i omawia go z Tobą przed przystąpieniem do leczenia.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Czy jest parking przy siłowni?
+          <div class="faq-icon"></div>
+        </button>
+        <div class="faq-answer">Tak, do dyspozycji klientów Elysium jest bezpłatny parking strzeżony bezpośrednio przy obiekcie z miejscami dla klientów siłowni, w tym dla osób z niepełnosprawnościami.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section-pad">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="label">Napisz lub zadzwoń</span>
+      <h2 class="section-title">KONTAKT</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="contact-grid">
+      <div class="reveal">
+        <div class="contact-detail">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" stroke-width="1.5"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 0 1-2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0z"/><path d="M15 11a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/></svg>
+          </div>
+          <div>
+            <div class="contact-label">Adres</div>
+            <div class="contact-value">ul. Piastowska 46, 72-123 Kliniska Wielkie</div>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 11.5 19.79 19.79 0 0 1 1.61 2.84 2 2 0 0 1 3.58 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.5a16 16 0 0 0 5.55 5.55l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 15.47z"/></svg>
+          </div>
+          <div>
+            <div class="contact-label">Telefon</div>
+            <div class="contact-value"><a href="tel:+48608338790">+48 608 338 790</a></div>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div>
+            <div class="contact-label">E-mail</div>
+            <div class="contact-value"><a href="mailto:kontakt@elysiumfitness.pl">kontakt@elysiumfitness.pl</a></div>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+
+        </div>
+        <div class="map-box">
+          <div class="map-placeholder">
+            <div class="map-pin"><svg viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 0 1-2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0z"/><path d="M15 11a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/></svg></div>
+            <span class="map-text">ul. Piastowska 46, Kliniska Wielkie</span>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form reveal">
+        <form onsubmit="submitForm(event)">
+          <div class="form-cols">
+            <div class="form-row">
+              <label>Imię i nazwisko</label>
+              <input type="text" placeholder="Jan Kowalski" required>
+            </div>
+            <div class="form-row">
+              <label>Telefon</label>
+              <input type="tel" placeholder="+48 000 000 000">
+            </div>
+          </div>
+          <div class="form-row">
+            <label>Adres e-mail</label>
+            <input type="email" placeholder="twoj@email.pl" required>
+          </div>
+          <div class="form-row">
+            <label>Temat zapytania</label>
+            <select>
+              <option value="">Wybierz temat...</option>
+              <option>Trening personalny</option>
+              <option>Rehabilitacja / fizjoterapia</option>
+              <option>Informacje ogólne</option>
+              <option>Inne</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label>Wiadomość</label>
+            <textarea placeholder="Napisz, jak możemy Ci pomóc..."></textarea>
+          </div>
+          <button type="submit" class="form-submit">Wyślij wiadomość</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">ELYSIUM <span>&</span> FITNESS</div>
+        <p class="footer-desc">Profesjonalne centrum fitness i rehabilitacji. Dołącz do społeczności, która codziennie wybiera ruch i zdrowie.</p>
+      </div>
+      <div>
+        <div class="footer-col-title">Nawigacja</div>
+        <ul class="footer-links">
+          <li><a href="#about">O nas</a></li>
+          <li><a href="#services">Usługi</a></li>
+          <li><a href="#pricing">Cennik</a></li>
+          <li><a href="#team">Trenerzy</a></li>
+          <li><a href="#gallery">Galeria</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Informacje</div>
+        <ul class="footer-links">
+          <li><a href="#" onclick="openModal('regulamin');return false">Regulamin siłowni</a></li>
+          <li><a href="#" onclick="openModal('polityka');return false">Polityka prywatności</a></li>
+          <li><a href="#" onclick="openModal('rodo');return false">RODO</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2025 Elysium Sport & Fitness. Wszelkie prawa zastrzeżone.</div>
+      <div class="footer-legal">
+        <a href="#" onclick="openModal('regulamin');return false">Regulamin</a>
+        <a href="#" onclick="openModal('polityka');return false">Polityka prywatności</a>
+        <a href="#" onclick="openModal('rodo');return false">RODO</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- MODALS -->
+<div class="modal-overlay" id="modal-overlay" onclick="closeModal(event)">
+  <div class="modal">
+    <div class="modal-header">
+      <div class="modal-title" id="modal-title">Regulamin</div>
+      <button class="modal-close" onclick="closeModalDirect()">✕</button>
+    </div>
+    <div class="modal-body" id="modal-body"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
 </html>
